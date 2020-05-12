@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jessica Maria</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        var vec = [];
+        var j;
+        for (j = 0; j < 10; j++) {
+            var valor = parseInt(Math.random() * 1000);
+            vec.push(valor);
+        }
+        document.write('NUMEROS ANTES DE BORRAR<br>');
+        for (j = 0; j < 10; j++) {
+            document.write(vec[j] + '<br>');
+        }
+        for (j = 0; j < 10; j = j + 2) {
+            delete vec[j];
+        }
+        document.write('NUMEROS LUEGO DE BORRAR LOS PARES<br>');
+        for (j = 0; j < 10; j++) {
+            document.write(vec[j] + '<br>');
+        }
+    </script>
+
+</body>
+
+</html>
